@@ -1,0 +1,19 @@
+{
+  "name": "adrienjeammes_3_24072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./styles/styles.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonsieurCotton/AdrienJeammes_3_24072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonsieurCotton/AdrienJeammes_3_24072021/issues"
+  },
+  "homepage": "https://github.com/MonsieurCotton/AdrienJeammes_3_24072021#readme"
+}
