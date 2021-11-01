@@ -1,2 +1,10 @@
 @import "./utils/variables";
 @import "./components/button";
+@import "./base/rules"
+@import "./layouts/header"
+@import "./layouts/user"
+@import "./layouts/cta"
+@import "./layouts/walkthrough"
+@import "./layouts/restaurants"
+@import "./layouts/footer"
+@import "./utils/mixins"
