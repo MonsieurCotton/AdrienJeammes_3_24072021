@@ -1,3 +1,7 @@
 @mixin box-shadow {
-    box-shadow: 3px 8px 8px #dedada;
+    box-shadow: 2px 5px 5px #dedada;
+}
+
+@mixin center {
+    text-align: center;
 }

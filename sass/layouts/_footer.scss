@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding-left: 20px;
+        &__title{
+            font-family: Shrikhand;
+            color: #FFF;
+            font-weight: 300;
+        }
+        &__links a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            color: #FFF;
+        }
+        &__links i {
+            margin-right: 10px;
+        }
+}

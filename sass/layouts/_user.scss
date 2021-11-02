@@ -1,0 +1,21 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    @include center;
+        &__location {
+            background-color: nth($grey-background, 2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                &--icon {
+                    margin-right: 5px;
+                }
+        }
+}
+
+.user__location h3 {
+    margin: 12px;
+    font-size: nth($font-size, 4);
+    font-weight: 400;
+}
+

@@ -1,0 +1,10 @@
+button.cta__button {
+    margin: 20px 0 20px 0;
+    border-radius: 2rem;
+    border: 0;
+    @include box-shadow;
+    font-size: 16px;
+    color: #fff;
+    padding: 1rem;
+    background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+}

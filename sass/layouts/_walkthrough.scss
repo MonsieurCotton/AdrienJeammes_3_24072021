@@ -1,0 +1,29 @@
+.walkthrough {
+    padding: 0 20px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+}
+
+.list__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: nth($grey-background, 1);
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 20px;
+    @include box-shadow;
+        &--number {
+            color: #fff;
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            padding: 4px 8px 4px 8px;
+            margin: 0 1.5rem 0 -12px;
+            font-weight: 300;
+            font-size: nth($font-size, 4);
+        }
+}
