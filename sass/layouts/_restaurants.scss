@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     @include box-shadow;
+        &:hover {
+            @include classic-hover;
+        }
         &--picture img {
             border-radius: 1.5rem 1.5rem 0 0;
             width: 100%;
@@ -21,9 +24,9 @@
             object-fit: cover;
         }
         &--infos h3 {
-            margin: 10px 0 10px 15px;
+            margin: 10px 0 10px 20px;
         }
         &--infos h4 {
-            margin: 10px 0 10px 15px;
+            margin: 10px 0 10px 20px;
         }
 }

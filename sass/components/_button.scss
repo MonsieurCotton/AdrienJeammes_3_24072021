@@ -7,4 +7,7 @@ button.cta__button {
     color: #fff;
     padding: 1rem;
     background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+        &:hover {
+            @include classic-hover;
+        }
 }

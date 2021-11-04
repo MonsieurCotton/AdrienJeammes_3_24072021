@@ -5,3 +5,14 @@
 @mixin text-center {
     text-align: center;
 }
+
+@mixin classic-hover {
+    box-shadow: 3px 3px 14px lightgray,3px 3px 14px lightgray;
+    transition-duration: 0.15s;
+}
+
+@mixin top-image-sizing {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}

@@ -8,6 +8,10 @@ button.cta__button {
   padding: 1rem;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
 }
+button.cta__button:hover {
+  box-shadow: 3px 3px 14px lightgray, 3px 3px 14px lightgray;
+  transition-duration: 0.15s;
+}
 
 .bloc-page {
   max-width: 768px;
@@ -69,7 +73,6 @@ header.header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   background-color: #F6F6F6;
   margin: 10px;
   padding: 10px 0;
@@ -85,6 +88,15 @@ header.header {
   margin: 0 1.5rem 0 -12px;
   font-weight: 300;
   font-size: 16px;
+}
+.list__block:hover {
+  background-color: #df4fdf11;
+  transition-duration: 0.2s;
+}
+
+.list__block i {
+  padding: 0 40px 0 20px;
+  color: grey;
 }
 
 .restaurants {
@@ -104,6 +116,10 @@ header.header {
   flex-direction: column;
   box-shadow: 2px 5px 5px #dedada;
 }
+.restaurants__cards:hover {
+  box-shadow: 3px 3px 14px lightgray, 3px 3px 14px lightgray;
+  transition-duration: 0.15s;
+}
 .restaurants__cards--picture img {
   border-radius: 1.5rem 1.5rem 0 0;
   width: 100%;
@@ -111,10 +127,10 @@ header.header {
   object-fit: cover;
 }
 .restaurants__cards--infos h3 {
-  margin: 10px 0 10px 15px;
+  margin: 10px 0 10px 20px;
 }
 .restaurants__cards--infos h4 {
-  margin: 10px 0 10px 15px;
+  margin: 10px 0 10px 20px;
 }
 
 .footer {
@@ -127,6 +143,9 @@ header.header {
   font-family: Shrikhand;
   color: #FFF;
   font-weight: 300;
+}
+.footer__links {
+  line-height: 10px;
 }
 .footer__links a {
   display: flex;
@@ -146,7 +165,6 @@ header.header {
   font-size: 24px;
   right: 1.5rem;
   bottom: 1.5rem;
-  cursor: pointer;
 }
 
 .restaurants__cards--tag {
@@ -157,6 +175,18 @@ header.header {
   position: absolute;
   top: 12px;
   right: 10px;
+}
+
+.header__return {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+img.menupage__pict {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
