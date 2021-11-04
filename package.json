@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MonsieurCotton/AdrienJeammes_3_24072021/issues"
   },
-  "homepage": "https://github.com/MonsieurCotton/AdrienJeammes_3_24072021#readme"
+  "homepage": "https://github.com/MonsieurCotton/AdrienJeammes_3_24072021#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
 }

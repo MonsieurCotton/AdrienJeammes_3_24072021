@@ -1,9 +1,9 @@
 .user {
     display: flex;
     flex-direction: column;
-    @include center;
+    @include text-center;
         &__location {
-            background-color: nth($grey-background, 2);
+            background-color: nth($color-background, 2);
             display: flex;
             align-items: center;
             justify-content: center;
