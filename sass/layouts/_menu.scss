@@ -1,3 +1,93 @@
 img.menupage__pict {
     @include top-image-sizing;
 }
+
+.menupage__title {
+    font-family: "shrikhand", sans-serif;
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2.2rem 0 0 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: 0px;
+    background-color: nth($color-background, 1);
+        &--heart {
+            position: absolute;
+            top: 3.3rem;
+            right: 8%;
+            font-size: 1.5rem;
+            color: #000;
+        }
+}
+
+.menupage__title h1 {
+    margin-bottom: 0px;
+}
+.menu__desc h2 {
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+}
+
+.menu {
+    background-color: nth($color-background, 1);
+    padding: 14px;
+}
+
+.menu__title {
+    padding: 2rem 0 .5rem;
+    font-size: 1rem;
+        &--underline {
+            @include underline;
+        }
+}
+
+.menu__desc {
+    @include menu-desc-block;
+        &--title {
+            padding-left: 12px,
+        }
+        &--subtitle {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 30px 12px;
+        }
+        &--animation {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #99e2d0;
+            top: 0;
+            left: 100%;
+            width: 20%;
+            height: 100%;
+            border-radius: 0 1.5rem 1.5rem 0;
+            color: #fff;
+            font-size: 20px;
+            transform-origin: right;
+            visibility: hidden;
+        }
+}
+
+.price {
+    @include price-tag-style;
+}
+
+.menu__button {
+    display: flex;
+    justify-content: center;
+    background-color: nth($color-background, 1);
+    padding-bottom: 20px;
+}
+
+.menu__desc:hover>.menu__desc--animation {
+    visibility: visible;
+    transition: all .5s ease-in;
+    transform: translateX(-100%);
+}
+
+.menu__desc:hover>.menu__desc--animation .menu__desc--circle {
+    transform: rotate(-360deg);
+    transition-duration: 1s;
+    animation-delay: 0.3s;
+}
+

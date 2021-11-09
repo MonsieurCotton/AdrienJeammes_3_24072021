@@ -16,3 +16,32 @@
     width: 100%;
     object-fit: cover;
 }
+
+@mixin menu-desc-block {
+    position: relative;
+    background-color: #fff;
+    height: 70px;
+    padding: 0 0 15px 0;
+    margin: 16px 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 10px #dedada;
+    animation: fadein 1.2s .3s ease-out both,transform .3s;
+    -webkit-transition: all 1.5s;
+    
+}
+
+@mixin underline {
+    width: 2.5rem;
+    border-top: 3px solid $color-tertiary;
+    margin: .5rem 0 0 0;
+}
+
+@mixin price-tag-style {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: .5rem;
+}
