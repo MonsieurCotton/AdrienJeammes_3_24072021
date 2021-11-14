@@ -91,3 +91,24 @@ img.menupage__pict {
     animation-delay: 0.3s;
 }
 
+.menu__desc:hover>.menu__desc--subtitle>.price {
+    padding-right: 4rem;
+    transition-duration: 0.5s;
+}
+
+.menu__desc:hover>.menu__desc--subtitle>.txt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@keyframes fadein{
+    0% {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
