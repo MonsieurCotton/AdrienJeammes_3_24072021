@@ -9,6 +9,7 @@
 @mixin classic-hover {
     box-shadow: 3px 3px 14px lightgray,3px 3px 14px lightgray;
     transition-duration: 0.15s;
+    filter: brightness(1.1);
 }
 
 @mixin top-image-sizing {
@@ -25,12 +26,9 @@
     margin: 16px 0;
     cursor: pointer;
     overflow: hidden;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px #dedada;
     animation: fadein 1s .3s ease-out both,transform .3s;
-    -webkit-transition: all 1.5s;
     
 }
 

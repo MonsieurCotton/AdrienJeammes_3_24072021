@@ -1,0 +1,40 @@
+@media (min-width: 769px) {
+    .bloc-page {
+        max-width: 1080px;
+    }
+
+    .cards_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .restaurants__cards {
+        width: 48%;
+        margin: 0px 5px 3rem 5px; 
+    }
+
+    .walkthrough__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .list__block--number {
+        margin: 0 5px 0 -12px;
+    }
+    
+    .list__block i {
+        padding: 0 10px 0 10px;
+    }
+
+    h3.list__block--text {
+        padding: 0 50px 0 5px;
+    }
+
+    .menu__desc:hover>.menu__desc--subtitle>.price {
+        padding-right: 13rem;
+        transition: 0.5s ease-in;
+    }
+}

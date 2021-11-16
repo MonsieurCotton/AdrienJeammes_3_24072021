@@ -3,6 +3,7 @@ button.cta__button {
     border-radius: 2rem;
     border: 0;
     width: 220px;
+    cursor: pointer;
     @include box-shadow;
     font-size: 16px;
     color: #fff;

@@ -3,6 +3,7 @@ button.cta__button {
   border-radius: 2rem;
   border: 0;
   width: 220px;
+  cursor: pointer;
   box-shadow: 2px 5px 5px #dedada;
   font-size: 16px;
   color: #fff;
@@ -12,6 +13,7 @@ button.cta__button {
 button.cta__button:hover {
   box-shadow: 3px 3px 14px lightgray, 3px 3px 14px lightgray;
   transition-duration: 0.15s;
+  filter: brightness(1.1);
 }
 
 body {
@@ -124,6 +126,7 @@ header.header {
 .restaurants__cards:hover {
   box-shadow: 3px 3px 14px lightgray, 3px 3px 14px lightgray;
   transition-duration: 0.15s;
+  filter: brightness(1.1);
 }
 .restaurants__cards--picture img {
   border-radius: 1.5rem 1.5rem 0 0;
@@ -243,8 +246,6 @@ img.menupage__pict {
   margin: 16px 0;
   cursor: pointer;
   overflow: hidden;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   border-radius: 1.5rem;
   box-shadow: 3px 3px 10px #dedada;
   animation: fadein 1s 0.3s ease-out both, transform 0.3s;
@@ -301,7 +302,7 @@ img.menupage__pict {
 
 .menu__desc:hover > .menu__desc--subtitle > .price {
   padding-right: 4rem;
-  transition-duration: 0.5s;
+  transition: 0.5s ease-in;
 }
 
 .menu__desc:hover > .menu__desc--subtitle > .txt {
@@ -318,6 +319,87 @@ img.menupage__pict {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 769px) {
+  .bloc-page {
+    max-width: 1080px;
+  }
+
+  .cards_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .restaurants__cards {
+    width: 48%;
+    margin: 0px 5px 3rem 5px;
+  }
+
+  .walkthrough__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .list__block--number {
+    margin: 0 5px 0 -12px;
+  }
+
+  .list__block i {
+    padding: 0 10px 0 10px;
+  }
+
+  h3.list__block--text {
+    padding: 0 50px 0 5px;
+  }
+
+  .menu__desc:hover > .menu__desc--subtitle > .price {
+    padding-right: 13rem;
+    transition: 0.5s ease-in;
+  }
+}
+.loader {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 2s forwards;
+}
+.loader__spinner {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #99E2D0;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #9356DC;
+  border-left: 16px solid #F6F6F6;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 
