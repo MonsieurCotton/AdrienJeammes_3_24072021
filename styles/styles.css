@@ -325,7 +325,7 @@ img.menupage__pict {
 }
 
 .menu__desc:hover > .menu__desc--subtitle > .price {
-  padding-right: 4rem;
+  padding-right: 5rem;
   transition: 0.5s ease-in;
 }
 
@@ -382,7 +382,11 @@ img.menupage__pict {
 
   .menu__desc:hover > .menu__desc--subtitle > .price {
     padding-right: 13rem;
-    transition: 0.5s ease-in;
+  }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  .menu__desc:hover > .menu__desc--subtitle > .price {
+    padding-right: 10rem;
   }
 }
 .loader {
