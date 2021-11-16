@@ -4,6 +4,12 @@
     margin-top: 70px;
 }
 
+.cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .restaurants__cards {
     position: relative;
     background-color: #fff;

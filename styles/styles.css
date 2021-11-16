@@ -112,6 +112,12 @@ header.header {
   margin-top: 70px;
 }
 
+.cards_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .restaurants__cards {
   position: relative;
   background-color: #fff;
@@ -169,10 +175,29 @@ header.header {
 .restaurants__cards--heart i {
   position: absolute;
   transform-origin: bottom;
-  opacity: 1;
+  opacity: 100%;
   font-size: 24px;
   right: 1.5rem;
   bottom: 1.5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.far.fa-heart:hover {
+  opacity: 0%;
+}
+
+.fas.fa-heart {
+  cursor: pointer;
+  opacity: 0%;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fas.fa-heart:hover {
+  opacity: 100%;
 }
 
 .restaurants__cards--tag {
@@ -206,12 +231,11 @@ img.menupage__pict {
   margin-bottom: 0px;
   background-color: #F6F6F6;
 }
-.menupage__title--heart {
+.menupage__title--heart i {
   position: absolute;
   top: 3.3rem;
   right: 8%;
   font-size: 1.5rem;
-  color: #000;
 }
 
 .menupage__title h1 {

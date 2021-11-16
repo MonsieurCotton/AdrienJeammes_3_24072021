@@ -1,8 +1,27 @@
 .restaurants__cards--heart i {
     position: absolute;
     transform-origin: bottom;
-    opacity: 1;
+    opacity: 100%;
     font-size: 24px;
     right: 1.5rem;
     bottom: 1.5rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.far.fa-heart:hover {
+    opacity: 0%;
+}
+
+.fas.fa-heart {
+    cursor: pointer;
+    opacity: 0%;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fas.fa-heart:hover {
+    opacity: 100%;
 }
